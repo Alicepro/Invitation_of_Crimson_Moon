@@ -1,0 +1,24 @@
+#ifndef _SDL_EX_H_
+#define _SDL_EX_H_
+
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_timer.h>
+#include <SDL_ttf.h>
+#include <SDL_thread.h>
+//#include <SDL_mixer.h>
+//#include <Windows.h>
+
+
+//窗口宽度,窗口高度,窗口BBP,窗口标题
+SDL_Surface *Init_SDL(unsigned int Width, unsigned int Height, unsigned BBP, char *Tittle);
+
+//文件名
+SDL_Surface *LoadImage(char *Filename);
+
+//坐标x,坐标y,素材文件,目标文件,clip
+void apply_surface(int x, int y, SDL_Surface *source, SDL_Surface *dest,SDL_Rect *clip = NULL);
+
+//坐标x,坐标y,屏幕文件,文字,字体,字体颜色,字体大小
+int out_text(int x, int y, SDL_Surface *Scr, char *Text, char *Font, SDL_Color textColor, int size);
+#endif

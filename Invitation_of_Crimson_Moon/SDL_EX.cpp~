@@ -1,0 +1,78 @@
+#include "SDL_EX.h"
+
+//窗口宽度,窗口高度,窗口BBP,窗口标题
+SDL_Surface *Init_SDL(unsigned int Width, unsigned int Height, unsigned BBP, char *Tittle)
+{
+	SDL_Surface *Screen;
+	if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
+	{
+		return NULL;
+	}
+
+	Screen = SDL_SetVideoMode(Width, Height, BBP, SDL_SWSURFACE);
+	if (Screen == NULL)
+	{
+		return NULL;
+	}
+
+	if (TTF_Init() == -1)
+	{
+		return NULL;
+	}
+
+	SDL_WM_SetCaption(Tittle, NULL);
+	return Screen;
+}
+
+//文件名
+SDL_Surface *LoadImage(char *Filename)
+{
+	SDL_Surface *DestImage = NULL;
+	SDL_Surface *optimizedImage = NULL;
+	DestImage = IMG_Load(Filename);
+	if (DestImage == NULL)
+	{
+		return NULL;
+	}
+	if (DestImage->format->palette == NULL)
+	{
+		exit(-233);
+		return 0;
+	}
+	optimizedImage = SDL_DisplayFormat(DestImage);//把文件格式化为显示面相同
+	SDL_FreeSurface(DestImage);
+	return optimizedImage;//和显示面一样格式的文件
+}
+
+//坐标x,坐标y,素材文件,目标文件,clip
+void apply_surface(int x, int y, SDL_Surface *source, SDL_Surface *dest,SDL_Rect *clip)
+{
+	SDL_Rect offset;//一个临时的矩形,储存偏移量
+	offset.x = x;
+	offset.y = y;
+	SDL_BlitSurface(source, clip, dest, &offset);
+	return;
+}
+
+//坐标x,坐标y,屏幕文件,文字,字体,字体颜色,字体大小
+int out_text(int x, int y, SDL_Surface *Scr, char *Text, char *Font, SDL_Color textColor, int size)
+{
+	TTF_Font *font;
+	font = TTF_OpenFont(Font,size);
+	if (font == NULL)
+	{
+		//OutputDebugString(L"OutText :1");
+		return -1;
+	}
+	SDL_Surface *Msg;
+	Msg = TTF_RenderText_Solid(font, Text, textColor);
+	if (Msg == NULL)
+	{
+		//OutputDebugString(L"OutText :2");
+		return -2;
+	}
+	apply_surface(x,y,Msg,Scr);
+	SDL_Flip(Scr);
+	SDL_FreeSurface(Msg);
+	return 0;
+}

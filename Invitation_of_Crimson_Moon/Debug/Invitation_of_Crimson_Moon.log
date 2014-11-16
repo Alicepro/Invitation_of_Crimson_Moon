@@ -1,0 +1,12 @@
+﻿  SDL_EX.cpp
+  move_hero.cpp
+h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+  main_move-test.cpp
+h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+  game.cpp
+h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.cpp(12): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Pth”的左侧
+h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.cpp(21): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+  正在生成代码...
+MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  Invitation_of_Crimson_Moon.vcxproj -> H:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.exe
