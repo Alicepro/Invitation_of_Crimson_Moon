@@ -1,12 +1,14 @@
-﻿  SDL_EX.cpp
-  move_hero.cpp
-h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
-  main_move-test.cpp
-h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
-  game.cpp
-h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
-h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.cpp(12): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Pth”的左侧
-h:\invitation_of_crimson_moon\invitation_of_crimson_moon\invitation_of_crimson_moon\game.cpp(21): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
-  正在生成代码...
-MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-  Invitation_of_Crimson_Moon.vcxproj -> H:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.exe
+﻿生成启动时间为 2014/11/17 21:00:15。
+     1>项目“E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.lib" /MACHINE:X86 Debug\game.obj
+         "Debug\main_move-test.obj"
+         Debug\move_hero.obj
+         Debug\SDL_EX.obj
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         Invitation_of_Crimson_Moon.vcxproj -> E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Debug\Invitation_of_Crimson_Moon.exe
+     1>已完成生成项目“E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.41
