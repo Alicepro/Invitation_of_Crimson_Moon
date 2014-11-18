@@ -1,29 +1,30 @@
-﻿生成启动时间为 2014/9/17 22:27:03。
-     1>项目“E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2014/11/18 15:03:45。
+     1>项目“E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt game.cpp "main_move-test.cpp" move_hero.cpp SDL_EX.cpp
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt game.cpp "main_move-test.cpp" move_hero.cpp SDL_EX.cpp
          game.cpp
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(20): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Pth”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(46): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
          main_move-test.cpp
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(20): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Pth”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(46): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
          move_hero.cpp
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(20): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Pth”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
+     1>e:\工作文档\语言项目\gits\yeyin\invitation_of_crimson_moon\invitation_of_crimson_moon\game.h(46): warning C4091: “typedef ”: 没有声明变量时忽略“Game_Field”的左侧
          SDL_EX.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.lib" /MACHINE:X86 /SAFESEH Release\game.obj
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.lib" /MACHINE:X86 /SAFESEH Release\game.obj
          "Release\main_move-test.obj"
          Release\move_hero.obj
          Release\SDL_EX.obj
-     1>game.obj : error LNK2001: 无法解析的外部符号 _SDL_Flip
-     1>main_move-test.obj : error LNK2001: 无法解析的外部符号 _SDL_Delay
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_Init
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_DisplayFormat
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_SetVideoMode
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_WM_SetCaption
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_UpperBlit
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _IMG_Load
-     1>SDL_EX.obj : error LNK2001: 无法解析的外部符号 _SDL_FreeSurface
-     1>MSVCRT.lib(crtexew.obj) : error LNK2001: 无法解析的外部符号 _WinMain@16
-     1>E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.exe : fatal error LNK1120: 10 个无法解析的外部命令
-     1>已完成生成项目“E:\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”(Build 个目标)的操作 - 失败。
+         正在生成代码
+         已完成代码的生成
+         Invitation_of_Crimson_Moon.vcxproj -> E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Release\Invitation_of_Crimson_Moon.exe
+     1>已完成生成项目“E:\工作文档\语言项目\gits\yeyin\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon\Invitation_of_Crimson_Moon.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:01.43
+已用时间 00:00:04.26

@@ -2,6 +2,17 @@
 
 _Windows_Infomation Window_Info;
 
+void SetSDLWindowIcon(SDL_Window *win)
+{
+	SDL_Surface *icon = NULL;
+
+	icon = SDL_LoadBMP("src\\31.bmp");
+	//设置图片中的透明色
+	SDL_SetColorKey(icon, SDL_TRUE, SDL_MapRGB(icon->format, 0xFF, 0, 0xFF));
+	SDL_SetWindowIcon(win, icon); // win 是之前 SDL_CreateWindow()创建的窗口
+	SDL_FreeSurface(icon);
+}
+
 void Init_Window(unsigned int Height, unsigned Width, std::string Title)
 {
 	Window_Info.Height = Height;
@@ -27,6 +38,8 @@ void Init_Window(unsigned int Height, unsigned Width, std::string Title)
 
 	SDL_SetWindowTitle(Window_Info.Win, Title.c_str());
 	Window_Info.Sur = SDL_GetWindowSurface(Window_Info.Win);
+
+	SetSDLWindowIcon(Window_Info.Win);
 	if (Window_Info.Sur == nullptr)
 		throw std::runtime_error("Failed to Get Window Surface!!");
 }

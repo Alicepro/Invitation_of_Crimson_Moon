@@ -1,8 +1,6 @@
 #include <iostream>
 #undef main
 #include "game.h"
-
-
 int main(int argc,char *argv[])
 {
 	SDL_Event event;

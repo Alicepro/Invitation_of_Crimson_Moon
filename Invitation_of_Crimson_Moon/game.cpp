@@ -5,27 +5,6 @@ extern const int Hero_W = 25;//自机的宽度
 
 extern bool IS_GAME_RUN = true;
 
-typedef struct Game_Pth
-{
-	SDL_Thread *Refr = nullptr;//刷新
-	SDL_Thread *Fid_Run = nullptr;//背景滚动指针
-};
-
-typedef struct Game_Field
-{
-	int Pic_Height = 1000;
-	int x = 32;
-	int y = 16;
-	int Width = 384;
-	int Height = 448;//==>
-};
-
-typedef struct
-{
-	SDL_Texture *Win;
-	SDL_Texture *Fid;
-}Game_BackGround;
-
 Game_Field Field;
 Game_BackGround BackGround;
 Game_Pth Thread;
@@ -33,6 +12,7 @@ Game_Pth Thread;
 void Init_Game(void)
 {
 	Init_Window(480, 640, "Invitation of Crimson Moon!");
+
 	BackGround.Fid = LoadImage("src\\background\\GameField_BackGround.png");
 	BackGround.Win = LoadImage("src\\background\\GameWindows_BackGround.png");
 }
