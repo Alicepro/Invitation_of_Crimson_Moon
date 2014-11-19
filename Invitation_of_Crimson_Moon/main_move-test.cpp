@@ -1,5 +1,6 @@
 #include <iostream>
 #undef main
+#include "SDL_EX.h"
 #include "game.h"
 int main(int argc,char *argv[])
 {
@@ -7,20 +8,13 @@ int main(int argc,char *argv[])
 	Init_Game();
 	Refresh_BkPic_Windows();
 	Scr_Field(1);
-	while (1)
+	while (event.type != SDL_QUIT)
 	{
-		while (SDL_PollEvent(&event))
+		if (SDL_PollEvent(&event))
 		{
-
-			if (event.type == SDL_QUIT)
-			{
-				IS_GAME_RUN = false;
-				SDL_Quit();
-				exit(1);
-			}
+			//event.type = handle_events();
 		}
 	}
-	IS_GAME_RUN = false;
 	SDL_Quit();
 	return 0;
 }

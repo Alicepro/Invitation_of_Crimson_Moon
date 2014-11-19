@@ -1,8 +1,8 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-#include "SDL_EX.h"
-#include "move_hero.h"
+#include <SDL.h>
+#include <SDL_thread.h>
 
 //Th06屏幕宽:640 高: 480
 //Th06游戏区域到顶部:16
@@ -21,11 +21,11 @@ typedef struct Game_Pth
 
 typedef struct Game_Field
 {
-	int Pic_Height = 1000;
-	int x = 32;
-	int y = 16;
-	int Width = 384;
-	int Height = 448;//==>
+	int Pic_Height = 1007;//图片长度
+	int x = 32;//贴图x坐标
+	int y = 16;//贴图y坐标
+	int Width = 385;//区域宽度
+	int Height = 448;//区域高度
 };
 
 typedef struct
@@ -44,8 +44,6 @@ extern const int Hero_W;//自机的宽度
 extern bool IS_GAME_RUN;//游戏是否运行
 
 typedef struct Game_Field;
-
-
 
 /***********************************************************************
 函数名称:Init_Game
